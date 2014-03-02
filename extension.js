@@ -118,7 +118,7 @@ const GPasteIntegrationButton = new Lang.Class({
             Shell.KeyBindingMode.MESSAGE_TRAY |
             Shell.KeyBindingMode.OVERVIEW,
             Lang.bind(this, function() {
-                this._gpaste.show_current_contents();
+                this._gpaste.toggle();
             })
         );
     },
